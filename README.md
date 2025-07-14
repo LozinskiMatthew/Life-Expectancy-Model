@@ -1,66 +1,98 @@
-# Life-Expectancy-Model
-Predicting age at death, of given individual, given the following data:
-- **Country**
-- **Year**
-- **Status**
-- **Life expectancy**
-- **Adult Mortality**
-- **Infant deaths**
-- **Alcohol**
-- **Percentage expenditure**
-- **Hepatitis B**
-- **Measles**
-- **BMI**
-- **Under-five deaths**
-- **Polio**
-- **Total expenditure**
-- **Diphtheria**
-- **HIV/AIDS**
-- **GDP**
-- **Population**
-- **Thinness 1-19 years**
-- **Thinness 5-9 years**
-- **Income composition of resources**
-- **Schooling**
+# 🧬 Life-Expectancy-Model
 
-Data was properly selected first, then split into
-the train, validation and test sets, was cleansed,
-properly imputed, without any data leakages,
-preprocessed, and correctly reasoned, then converted into
-numbers, just after One Hot Encoding and MinMax normalization,
-the models were created with diligence to their architectures,
-and the resulting regression model, has achieved a very good result
-being +-1.2 year wrong on average for the individuals, with
-a very good confidence intervals, thus the problem was solved,
-in future I may fine tune it even further this time using a proper tool for this, in my case: Optuna.
+A regression model that predicts an individual’s life expectancy based on demographic, economic, and health-related data.  
+This project emphasizes proper preprocessing, careful model design, and strong predictive performance.
 
+---
 
-## How to run the code
-### Option 1:
-Via google collab, everythin is set, to work there,
-and thus you just need a google account, log in to google collab,
-and then upload a LifeExpectancyModel.ipynb file,
-and simply run it, and everything will work fine.
-### Option 2:
-You can run it on the environment with python and
-required frameworks/libraries (provided below), most
-preferably, you should use Conda, and Jupyter Notebook,
-with all of the libraries and framewroks installed,
-you should upload a LifeExpectancyModel.ipynb file,
-to Jupyter Notebook, and within the same directtory,
-you must upload, a data.csv file, from my github repo,
-were you to put it elsewhere, you shall change the path,
-in the proper cell, at the end after you'd do everythin needed,
-you shall comment, checked lines within the jupyter notebook
-code, I pinned them with the comment to their right.
-After all of this code will work properly.
+## 📊 Features Used for Prediction
 
-## The provided code works with the following libraries (wasn't tested on the other ones):
-TensorFlow version: 2.18.0  
-NumPy version: 1.26.4  
-Matplotlib version: 3.10.0  
-Pandas version: 2.2.2  
-Scikit-learn version: 1.6.1  
-Python version: 3.11.11 (main, Dec  4 2024, 08:55:07) [GCC 11.4.0]
+- Country  
+- Year  
+- Status  
+- Life expectancy  
+- Adult Mortality  
+- Infant deaths  
+- Alcohol  
+- Percentage expenditure  
+- Hepatitis B  
+- Measles  
+- BMI  
+- Under-five deaths  
+- Polio  
+- Total expenditure  
+- Diphtheria  
+- HIV/AIDS  
+- GDP  
+- Population  
+- Thinness (1–19 years)  
+- Thinness (5–9 years)  
+- Income composition of resources  
+- Schooling  
 
-"And these are the only libraries, and frameworks you need."
+---
+
+## 🧪 Model Overview
+
+- 🧱 **Framework:** TensorFlow (Keras API)  
+- 📊 **Type:** Regression Neural Network  
+- 📉 **Evaluation:** Mean Absolute Error ≈ ±1.2 years  
+- 🔧 **Future Work:** Hyperparameter tuning using Optuna for further optimization
+
+---
+
+## 📈 Project Summary
+
+- Dataset was **cleaned, imputed, and normalized** (no data leakage).
+- Applied **One-Hot Encoding** and **MinMax scaling** to categorical and numerical features.
+- Data was split into **train**, **validation**, and **test** sets.
+- The final model is a **regression neural network**, built with TensorFlow/Keras.
+- Achieved **±1.2 years average prediction error**, with tight confidence intervals.
+- Future improvements may include **hyperparameter optimization using Optuna**.
+
+---
+
+## 🚀 Getting Started
+
+### ✅ Option 1: Google Colab (best option)
+
+You can run the notebook directly in [Google Colab](https://colab.research.google.com/):
+
+1. Upload `LifeExpectancyModel.ipynb`.
+2. Upload the dataset `data.csv` into the same Colab runtime directory.
+3. Run all cells – everything is pre-configured to work smoothly.
+
+### ✅ Option 2: Local Environment
+
+Run the notebook locally using **Conda + Jupyter Notebook**:
+
+1. Install the required libraries (see below).
+2. Place both `LifeExpectancyModel.ipynb` and `data.csv` in the **same folder**.
+3. Launch Jupyter Notebook and open `LifeExpectancyModel.ipynb`.
+4. If you move the CSV file elsewhere, update the dataset path in the appropriate cell.
+5. Comment out the pinned lines as directed in the notebook (these are marked with comments).
+6. Run the notebook to train and evaluate the model.
+
+---
+
+## 🔧 Requirements lest you choose local environment
+
+1. You need to install python most preferably 3.10
+2. Then via pip install -r requirements.txt you must install the requirements (for your convenience the best choice would be miniconda).
+
+```txt
+numpy           == 1.26.4  
+pandas          == 2.2.2  
+matplotlib      == 3.10.0  
+scikit-learn    == 1.6.1  
+tensorflow      == 2.18.0  
+```
+
+> ⚠️ **Note:** The code was developed and tested specifically on the above versions. Compatibility with other versions is not guaranteed.
+
+---
+
+## ✅ That's It!
+
+You're ready to explore, train, and evaluate the life expectancy prediction model.  
+If you encounter issues or want to contribute, feel free to open an issue or fork the repo.
