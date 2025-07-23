@@ -5,7 +5,7 @@ This project emphasizes proper preprocessing, careful model design, and strong p
 
 ---
 
-## 📊 Features Used for Prediction
+## Features Used for Prediction
 
 - Country  
 - Year  
@@ -32,16 +32,16 @@ This project emphasizes proper preprocessing, careful model design, and strong p
 
 ---
 
-## 🧪 Model Overview
+## Model Overview
 
-- 🧱 **Framework:** TensorFlow (Keras API)  
-- 📊 **Type:** Regression Neural Network  
-- 📉 **Evaluation:** Mean Absolute Error ≈ ±1.2 years  
-- 🔧 **Future Work:** Hyperparameter tuning using Optuna for further optimization
+- **Framework:** TensorFlow (Keras API)  
+- **Type:** Regression Neural Network  
+- **Evaluation:** Mean Absolute Error ≈ ±1.2 years  
+- **Future Work:** Hyperparameter tuning using Optuna for further optimization
 
 ---
 
-## 📈 Project Summary
+## Project Summary
 
 - Dataset was **cleaned, imputed, and normalized** (no data leakage).
 - Applied **One-Hot Encoding** and **MinMax scaling** to categorical and numerical features.
@@ -52,9 +52,9 @@ This project emphasizes proper preprocessing, careful model design, and strong p
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
-### ✅ Option 1: Google Colab (best option)
+### Option 1: Google Colab (best option)
 
 You can run the notebook directly in [Google Colab](https://colab.research.google.com/):
 
@@ -62,7 +62,7 @@ You can run the notebook directly in [Google Colab](https://colab.research.googl
 2. Upload the dataset `data.csv` into the same Colab runtime directory.
 3. Run all cells – everything is pre-configured to work smoothly.
 
-### ✅ Option 2: Local Environment
+### Option 2: Local Environment
 
 Run the notebook locally using **Conda + Jupyter Notebook**:
 
@@ -75,7 +75,7 @@ Run the notebook locally using **Conda + Jupyter Notebook**:
 
 ---
 
-## 🔧 Requirements lest you choose local environment
+## Requirements lest you choose local environment
 
 1. You need to install python most preferably 3.10
 2. Then via pip install -r requirements.txt you must install the requirements (for your convenience the best choice would be miniconda).
